@@ -1,0 +1,39 @@
+#menu-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+#menu-links {
+    display: none;
+    list-style: none;
+}
+
+#menu-links li {
+    margin-bottom: 10px;
+}
+
+#menu-links li a {
+    text-decoration: none;
+    color: #000;
+}
+.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
